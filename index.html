@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta + Title -->
+  <meta charset="UTF-8" />
+  <title>PhantekzyRadio</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- JavaScript File -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="container">
+    <div class="top">
+      <p>Powered by Phantekzy</p>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+      <div class="one">
+        <h2>MainiRadio</h2>
+
+        <!-- Search Bar -->
+        <div class="search">
+          <input id="search-bar" class="search-bar" type="text" placeholder="What would you like to listen to?" />
+          <i class="fa fa-search" id="search-icon"></i>
+          <span class="clear-btn" id="clear-btn">&times;</span>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button class="menu-toggle">☰</button>
+
+	<!-- Slide Menu -->
+  	<div id="slide-menu" class="slide-menu">
+    	<button id="close-menu" class="close-btn">&times;</button>
+    		<ul>
+			<hr>
+      			<li><a href="#top">Top 100</a></li>
+			<hr>
+      			<li><a href="#trending">Trending Now</a></li>
+			<hr>
+      			<li><a href="#voted">Most Voted</a></li>
+			<hr>
+      			<li><a href="#added">Recently Added</a></li>
+			<hr>
+      			<li><a href="#podcast">Top Podcasts</a></li>
+			<hr>
+    </ul>
+  </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <nav class="categories-nav">
+        <button data-category="all">Radios</button>
+        <button data-category="top">Top 100</button>
+        <button data-category="trending">Trending Now</button>
+        <button data-category="voted">Most Voted</button>
+        <button data-category="added">Recently Added</button>
+        <button data-category="podcast">Top Podcasts</button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Search Results Container -->
+  <div id="search-results" style="display: none; padding: 30px 90px; font-size: 50px">
+    <h3 style="color: #00e676; margin-bottom: 20px;">Radio Search :</h3>
+    <p id="search-status" style="color: #fff; margin-bottom: 20px; font-size: 30px;"></p>
+    <div id="search-carousel" class="carousel list-view"></div>
+  </div>
+
+  <!-- User Radio Tabs -->
+  <div class="user-radio">
+
+    <!-- Top 100 Section -->
+    <div class="tab-content" id="top">
+      <h3>Top 100</h3>
+      <p data-para="top" style="display: none;">Discover the most popular radio stations...</p>
+      <div class="carousel" id="top-carousel"></div>
+    </div>
+
+    <!-- Trending Section -->
+    <div class="tab-content" id="trending">
+      <h3>Trending Now</h3>
+      <p data-para="trending" style="display: none;">Stay in the loop with the latest trending radio stations...</p>
+      <div class="carousel" id="trending-carousel"></div>
+    </div>
+
+    <!-- Most Voted Section -->
+    <div class="tab-content" id="voted">
+      <h3>Most Voted</h3>
+      <p data-para="voted" style="display: none;">These are the most voted radio stations...</p>
+      <div class="carousel" id="voted-carousel"></div>
+    </div>
+
+    <!-- Recently Added Section -->
+    <div class="tab-content" id="added">
+      <h3>Recently Added</h3>
+      <p data-para="added" style="display: none;">Check out the most recently added stations...</p>
+      <div class="carousel" id="added-carousel"></div>
+    </div>
+
+    <!-- Top Podcasts Section -->
+    <div class="tab-content" id="podcast">
+      <h3>Top Podcasts</h3>
+      <p data-para="podcast" style="display: none;">Explore a world of podcasts...</p>
+      <div class="carousel" id="podcast-carousel"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
